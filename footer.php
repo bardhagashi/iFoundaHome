@@ -32,11 +32,6 @@
                     <div class="col-md-6 item text">
                         <h3>Subscribe to be updated</h3>
                         <div class="input-group mb-3">
-                            <!--<input type="text" name="Email" class="form-control" placeholder="email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                           
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" method="post" formaction="">Subscribe</button>
-                            </div>-->
 
                             <form method="post" action="<?php echo get_template_directory_uri(); ?>/subForMail.php">
 
