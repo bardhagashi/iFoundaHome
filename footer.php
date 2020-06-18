@@ -37,7 +37,7 @@
 
                                 <p>Join our mailing list. We write rarely, but only the best content.</p>
 
-                                <input type="email" name="Email" class="form-control my-4" placeholder="E-mail">
+                                <input type="email" name="Email" class="form-control my-4" placeholder="E-mail" required>
 
                                 <button class="btn btn-info btn-block" type="submit">Subscribe</button>
 
