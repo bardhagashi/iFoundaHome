@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.carousel {
+  position: relative;
+}
+.sad {
+  position: relative;
+}
+.form {
+  width: 34%;
+  z-index: 1;
+  position: absolute;
+  background: white;
+  display: flex;
+  left: 55%;
+  top: 15%;
+}
+.form-style {
+  margin: 4%;
+}
+.top {
+  padding: 2% 0% 0% 2%;
+}
+.top #title {
+  font-weight: 700;
+}
+.top p {
+  font-weight: 100;
+  color: #a9a9a9;
+  font-family: "Rubik", sans-serif;
+}
+.first-row {
+  display: flex;
+  width: 96%;
+  padding: 2% 0% 0% 0.9%;
+}
+.first-row .col {
+  width: 50%;
+}
+.first-row .column {
+  width: 50%;
+}
+.second-row {
+  padding: 2% 0% 0% 3.2%;
+  width: 96%;
+}
+.third-row {
+  padding: 2% 0% 0% 3.2%;
+}
+.third-row #message {
+  width: 96%;
+}
+.fifth-row {
+  padding: 2% 0% 2% 3.2%;
+}
+.fifth-row #submit {
+  width: 96%;
+  height: 40px;
+  background: #1ea69a;
+  border: none;
+  color: #ffffff;
+}
+.fifth-row #submit:hover {
+  cursor: pointer;
+  background: #373737;
+}
+.box {
+  width: 50px;
+  height: 60px;
+  background-color: #f28500;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  left: -46px;
+  top: 13px;
+}
+.box.arrow-right:after {
+  content: " ";
+  position: absolute;
+  right: -15px;
+  top: 15px;
+  border-top: 15px solid transparent;
+  border-right: none;
+  border-left: 15px solid #f28500;
+  border-bottom: 15px solid transparent;
+}
+.first-card {
+  background: white;
+  left: 40%;
+  top: 55%;
+  display: none;
+}
+.second-card {
+  background: white;
+  left: 40%;
+  top: 55%;
+  display: none;
+}
+.third-card {
+  background: white;
+  left: 40%;
+  top: 55%;
+  display: none;
+}
+.title {
+  color: #000000;
+  font-family: "Rubik";
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 0% 5% 0% 10%;
+}
+.title:hover {
+  cursor: pointer;
+  color: #1ea69a;
+  text-decoration: none;
+}
+.price {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Rubik";
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 0% 5% 0% 10%;
+}
+span {
+  color: #1ea69a;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  padding: 0% 5% 0% 10%;
+}
+.features {
+  display: flex;
+}
+@media (min-width: 368px) and (max-width: 1024px) {
+  .form {
+    width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  .box {
+    display: none;
+  }
+  .first-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 13rem;
+    width: 100%;
+    max-width: 40rem;
+  }
+  .second-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 13rem;
+    width: 100%;
+    max-width: 40rem;
+  }
+  .third-card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 13rem;
+    width: 100%;
+    max-width: 40rem;
+  }
+}
