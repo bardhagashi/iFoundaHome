@@ -136,6 +136,7 @@
     width: 100%;
     position: relative;
     left: 0%;
+    top: 5%;
   }
   .box {
     display: none;
@@ -166,5 +167,117 @@
     max-height: 13rem;
     width: 100%;
     max-width: 40rem;
+  }
+}
+@media (max-width: 1280px) {
+  .form {
+    top: 5%;
+  }
+}
+@media (max-width: 1014px) {
+  .first-card {
+    width: 100%;
+    max-width: 30rem;
+    height: 100%;
+    max-height: 10rem;
+  }
+  .second-card {
+    width: 100%;
+    max-width: 30rem;
+    height: 100%;
+    max-height: 10rem;
+  }
+  .third-card {
+    width: 100%;
+    max-width: 30rem;
+    height: 100%;
+    max-height: 10rem;
+  }
+}
+@media (max-width: 801px) {
+  .first-card {
+    left: 30%;
+    top: 45%;
+    height: 100%;
+    max-height: 9rem;
+  }
+  .second-card {
+    left: 30%;
+    top: 45%;
+    height: 100%;
+    max-height: 9rem;
+  }
+  .third-card {
+    left: 30%;
+    top: 45%;
+    height: 100%;
+    max-height: 9rem;
+  }
+}
+@media (max-width: 749px) {
+  .first-card {
+    width: 100%;
+    max-width: 28rem;
+  }
+  .second-card {
+    width: 100%;
+    max-width: 28rem;
+  }
+  .third-card {
+    width: 100%;
+    max-width: 28rem;
+  }
+}
+@media (max-width: 640px) {
+  .first-card {
+    width: 100%;
+    max-width: 26rem;
+  }
+  .second-card {
+    width: 100%;
+    max-width: 26rem;
+  }
+  .third-card {
+    width: 100%;
+    max-width: 26rem;
+  }
+}
+@media (max-width: 610px) {
+  .first-card {
+    top: 38%;
+    left: 23%;
+  }
+  .second-card {
+    top: 38%;
+    left: 23%;
+  }
+  .third-card {
+    top: 38%;
+    left: 23%;
+  }
+}
+@media (max-width: 509px) {
+  .first-card {
+    left: 9.5%;
+    top: 30%;
+  }
+  .second-card {
+    left: 9.5%;
+    top: 30%;
+  }
+  .third-card {
+    left: 9.5%;
+    top: 30%;
+  }
+}
+@media (max-width: 488px) {
+  .first-card {
+    display: none;
+  }
+  .second-card {
+    display: none;
+  }
+  .third-card {
+    display: none;
   }
 }
