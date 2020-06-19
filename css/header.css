@@ -43,9 +43,13 @@
   width: fit-content;
 }
 
-.site-header .navbar .col-md-auto > * {
+.site-header .navbar .col-md-auto {
   fill: #fff;
   color: #fff;
+}
+
+.site-header .navbar .col-md-auto .user-login path {
+  fill: #fff;
 }
 
 .site-header .navbar .col-md-auto .user-login :hover path {
