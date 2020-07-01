@@ -19,9 +19,20 @@
         wp_enqueue_script('bootstrapScript', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', array('jquery'), '', true);
         wp_enqueue_script('bootstrapScript1', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js', array('jquery'), '', true);
         wp_enqueue_script('customjs', get_template_directory_uri().'/js/ifoundahome.js', array(), '1.0.0', true);
+        wp_enqueue_script('getDayAndDatejs', get_template_directory_uri().'/js/getDayAndDate.js', array(), '1.0.0', true);
+        wp_enqueue_script('hideAndShowLoginRegisterjs', get_template_directory_uri().'/js/hideAndShowLoginRegister.js', array(), '1.0.0', true);
 
     }
     add_action('wp_enqueue_scripts', "ifoundahome_script_enqueue");
+
+    if( file_exists( get_stylesheet_directory(). '/fields.php' ))
+    {
+        require_once get_stylesheet_directory(). '/fields.php';
+    }
+    else
+    {
+        require_once TEMPLATEPATH . '/fields.php';
+    }
 
     function ifoundahome_theme_setup() {
 

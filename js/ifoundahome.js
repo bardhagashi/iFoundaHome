@@ -1,6 +1,4 @@
-// Javascript functions come here
-
-// Back to Top Button js
+// Back to Top Button
 var btn = $('.buttonToTop');
 
 $(window).scroll(function() {
@@ -15,3 +13,4 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+// Back to Top Button

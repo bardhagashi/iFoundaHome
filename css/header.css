@@ -48,6 +48,13 @@
   color: #fff;
 }
 
+.site-header .navbar .col-md-auto .user-login a {
+  color: #fff;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 500;
+}
+
 .site-header .navbar .col-md-auto .user-login path {
   fill: #fff;
 }
@@ -101,4 +108,86 @@
     margin-bottom: 10px;
     text-align:center;  
   }
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+.modal-body .close {
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+#divOfQuotes {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url("https://image.freepik.com/free-photo/minimal-home-interior-3d-rendering-with-beach-sea-view_209090-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quotePhoto {
+  display: inline-block;
+  width: 36px;
+  margin-bottom: 30px;
+}
+
+.smarty {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.authorOfSmarty {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  opacity: .5;
+}
+
+.dateBox {
+  margin-top: auto;
+}
+
+.dateBox span {
+  display: block;
+}
+
+.dateBox .loginDate {
+  font-size: 20px;
+}
+
+.dateBox .loginDay {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.formBtn {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: teal;
+}
+
+#loginForm {
+  display: block;
+  padding: 20px;
+  padding-right: 0;
+}
+
+#registerForm {
+  display: none;
+  padding: 20px;
+  padding-right: 0;
 }
