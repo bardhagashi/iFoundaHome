@@ -1,3 +1,8 @@
+<?php get_header();?>
+
+<!-- Back to top button -->
+<a class="buttonToTop"></a>
+
 <div class="sad">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -96,3 +101,5 @@
         </div>
     </div>
 </div>
+
+<?php get_footer();?>
