@@ -1,0 +1,31 @@
+// creating table subscribers
+
+CREATE TABLE subscribers (
+    email varchar(50) NOT NULL PRIMARY KEY
+);
+
+// creating table users
+
+CREATE TABLE subscribers (
+    uid int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    uUsername TINYTEXT NOT NULL,
+    uEmail TINYTEXT NOT NULL,
+    uPwd LONGTEXT NOT NULL,
+    uSub TINYINT(1) NOT NULL DEFAULT 0
+);
+
+// trigger after insert row on users table
+
+DELIMITER $$
+
+CREATE TRIGGER after_users_insert
+AFTER INSERT
+ON users FOR EACH ROW
+BEGIN
+    IF NEW.uSub = 1 THEN
+        INSERT INTO subscribers(email)
+        VALUES(new.uEmail);
+    END IF;
+END$$
+
+DELIMITER ;
