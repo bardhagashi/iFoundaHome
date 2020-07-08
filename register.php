@@ -5,7 +5,7 @@ require_once("db_config.php");
 if(isset($_POST['signup-submit'])) {
 
     // Create connection
-    $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+    $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
     // Check connection
     if(!$conn){
