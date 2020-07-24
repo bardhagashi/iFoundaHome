@@ -1,6 +1,6 @@
 <?php 
       if(isset($_POST['submit'])){
-        echo 'Thank you!';
+        echo "<p>Thanks for submitting! </p>";
       }else{
         echo '';
       } 
