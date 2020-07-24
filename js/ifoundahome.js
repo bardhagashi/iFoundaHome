@@ -14,3 +14,5 @@ btn.on("click", function (e) {
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
 // Back to Top Button
+
+//carousel
