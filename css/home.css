@@ -803,3 +803,94 @@ img.image-agent {
   margin-left: 30px;
   color: #808080;
 }
+.single-post {
+  background: whitesmoke;
+}
+.sale-price {
+  padding-left: 50%;
+  padding-top: 2%;
+}
+.single-page-top {
+  display: flex;
+}
+#single-title {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.single-post-picture img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.single-post-picture {
+  padding-bottom: 5%;
+}
+.id-style {
+  display: flex;
+}
+.id-color {
+  color: #1ea69a;
+  padding-left: 1%;
+}
+#line-style {
+  border-style: dashed;
+  width: 650px;
+  margin-right: 30px;
+}
+.more-property-information {
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-left: 30px;
+  padding-left: 30px;
+  background: white;
+  width: 700px;
+}
+.rh_svg-single {
+  fill: #1ea69a;
+}
+.bedroom-single,
+.bathroom-single,
+.area-single,
+.year-built,
+.lot-size {
+  color: #373737;
+  padding: 10px;
+}
+.desc-font-style {
+  color: #1c9d92;
+  margin-top: 10px;
+}
+.desc-paragraph {
+  color: #808080;
+}
+.single-description {
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+.note-paragraph {
+  background: #f7f7f7;
+  width: 600px;
+  color: #373737;
+  margin-top: 20px;
+  padding: 10px;
+}
+.vid-style {
+  margin-top: 20px;
+}
+.comment-respond {
+  background: #f7f7f7;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+#reply-title {
+  font-size: 20px;
+}
+.submit {
+  background: #1ea69a;
+  color: #ffffff;
+  height: 40px;
+}
