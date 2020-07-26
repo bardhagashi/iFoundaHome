@@ -92,8 +92,8 @@
               'editor',
               'excerpt',
               'thumbnail',
-              'revisions'
-              
+              'revisions',
+              'comments'
           ), 
           'taxonomies' => array('category', 'post_tag'),
           'menu_position' => 5,
