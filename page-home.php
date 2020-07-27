@@ -405,6 +405,166 @@ Template Name: Home Page Template
     post_pagination();?> </div>
     <?php endif; ?>
 </div>
+<div class="properties-title">
+    <h6 class="top--recent">Properties</h6>
+    <h2>For Rent</h2>
+    <p class="top--paragraph">Check out latest properties for rent.</p>
+</div>
+
+<div class="container-2">
+    <?php
+   if(is_front_page()) {
+    $paged = (get_query_var('page')) ? get_query_var('page') : 1;
+}else {
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+}
+   query_posts(array(
+       'post_type' => 'rent',
+       'paged' => $paged,
+       'posts_per_page' => 3 
+   ));
+    if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="row-12">
+        <div class="column-2">
+            <div class="header-img">
+                <div class="media-for-sale">
+                    <div class="camera-property-picture">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                            <style type="text/css">
+                            .st0 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                            }
+                            </style>
+                            <path class="st0"
+                                d="M3 5h12c1.1 0 2 0.9 2 2v8c0 1.1-0.9 2-2 2H3c-1.1 0-2-0.9-2-2V7C1 5.9 1.9 5 3 5zM7.7 1h2.8c0.8-0.2 1.7 0.4 1.8 1.2 0 0 0 0.1 0 0.1L13 5H5l0.7-2.7C5.9 1.4 6.8 0.8 7.7 1zM9 7.4c2.2 0 4 1.8 4 4s-1.8 4-4 4 -4-1.8-4-4S6.8 7.4 9 7.4zM9 9c1.3 0 2.4 1.1 2.4 2.4s-1.1 2.4-2.4 2.4 -2.4-1.1-2.4-2.4S7.7 9 9 9L9 9zM8.2 2.6h1.6c0.4 0 0.8 0.4 0.7 0.9 0 0.4-0.3 0.7-0.7 0.7H8.2c-0.4 0-0.8-0.3-0.9-0.7 0-0.4 0.3-0.8 0.7-0.9C8.1 2.6 8.2 2.6 8.2 2.6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="media-number"><?php the_field('pictures_provided')?></p>
+                </div>
+                <div class="media-video-for-sale">
+                    <div class="camera-for-sale-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                            <style type="text/css">
+                            .st0 {
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                            }
+                            </style>
+                            <path class="st0"
+                                d="M4 1h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3V4C1 2.3 2.3 1 4 1zM3.4 2.6c0.4 0 0.8 0.4 0.8 0.8V5c0 0.4-0.4 0.8-0.8 0.8C3 5.8 2.6 5.4 2.6 5c0 0 0 0 0 0V3.4C2.6 3 3 2.6 3.4 2.6L3.4 2.6zM11.2 9.2c0.1-0.1 0.2-0.2 0.1-0.4 0-0.1-0.1-0.1-0.1-0.1L7.1 5.9C7 5.8 7 5.8 6.9 5.8c-0.2 0-0.3 0.1-0.3 0.3v5.9c0 0.2 0.1 0.3 0.3 0.3 0.1 0 0.1 0 0.2-0.1L11.2 9.2zM3.4 7.4c0.4 0 0.8 0.4 0.8 0.8l0 0v1.6c0 0.4-0.4 0.8-0.8 0.8 -0.4 0-0.8-0.4-0.8-0.8 0 0 0 0 0 0V8.2C2.6 7.8 3 7.4 3.4 7.4zM3.4 12.2c0.4 0 0.8 0.4 0.8 0.8l0 0v1.6c0 0.4-0.4 0.8-0.8 0.8 -0.4 0-0.8-0.4-0.8-0.8 0 0 0 0 0 0V13C2.6 12.6 3 12.2 3.4 12.2 3.4 12.2 3.4 12.2 3.4 12.2zM14.6 2.6c0.4 0 0.8 0.4 0.8 0.8l0 0V5c0 0.4-0.4 0.8-0.8 0.8S13.8 5.4 13.8 5V3.4C13.8 3 14.2 2.6 14.6 2.6L14.6 2.6zM14.6 7.4c0.4 0 0.8 0.4 0.8 0.8l0 0v1.6c0 0.4-0.4 0.8-0.8 0.8s-0.8-0.4-0.8-0.8V8.2C13.8 7.8 14.2 7.4 14.6 7.4zM14.6 12.2c0.4 0 0.8 0.4 0.8 0.8l0 0v1.6c0 0.4-0.4 0.8-0.8 0.8s-0.8-0.4-0.8-0.8V13C13.8 12.6 14.2 12.2 14.6 12.2 14.6 12.2 14.6 12.2 14.6 12.2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="media-video-number"><?php the_field('videos_provided')?></php>
+                </div>
+                <?php if ( get_field( 'featured_for_rent_property' ) ): ?>
+                <div class="featured-ribbon">
+                    <svg class="star-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <style type="text/css">
+                        .st0 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                        }
+                        </style>
+                        <path class="st0"
+                            d="M7.4 2.4c0-0.2 0.2-0.3 0.4-0.4 0.1 0 0.3 0 0.5 0 0.2 0.1 0.3 0.2 0.4 0.4l1.5 3.1L13.4 6c0.2 0 0.4 0.1 0.5 0.3C14 6.4 14 6.6 14 6.8c0 0.2-0.1 0.4-0.2 0.5l-2.4 2.4 0.6 3.4c0 0.2 0 0.4-0.1 0.5 -0.2 0.3-0.6 0.4-0.9 0.2l0 0 -3-1.5 -2.9 1.6c-0.3 0.2-0.7 0.1-0.9-0.2l0 0C4 13.5 4 13.3 4 13.1l0.6-3.4L2.2 7.3C2.1 7.2 2 7 2 6.8s0-0.4 0.2-0.5C2.3 6.1 2.4 6 2.6 6l3.3-0.5L7.4 2.4z">
+                        </path>
+                    </svg>
+                </div>
+                <?php else:
+                endif; ?>
+                <?php if(get_field('trending_for_rent_property')):?>
+                <div class="hot-ribbon">
+                    <svg class="hot-ribbon-style" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <style type="text/css">
+                        .st0 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                        }
+                        </style>
+                        <path class="st0"
+                            d="M12 10c0.1 2.1-1.6 3.9-3.8 4C8.1 14 8 14 8 14c-2.2-0.1-3.9-1.8-4-4 0.2-3.5 5-3 3-8 0-0.1 1 1 2 2 1 0.9 1.9 2.4 0 5 0 0.1-2.3 2 0 2 0 0 2 0 2-3C11.7 8.4 12.1 9.2 12 10L12 10z">
+                        </path>
+                    </svg>
+                </div>
+                <?php else:
+                    endif;?>
+                <div class="thumbnail-img" class="image-property">
+                    <?php the_post_thumbnail( 'large');  ?>
+                    <p><?php the_content();?>
+                        <div class="property-type-description">
+                            <div class="property-type"><?php the_field('property_type');?></div>
+                            <div class="for-rent-div">For Rent</div>
+                        </div>
+                </div>
+                </p>
+            </div>
+            <div class="column--container">
+                <h5><a href="<?php the_permalink() ?>"><?php the_field('for_rent_property_title');?></a></h5>
+                <p class="post--description">Added: <?php the_time( 'F, j, Y' );?></p>
+                <div class="properties">
+                    <div class="bedroom">
+                        <p>Bedrooms</p>
+                        <svg class="rh_svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M1111.91,600.993h16.17a2.635,2.635,0,0,1,2.68,1.773l1.21,11.358a2.456,2.456,0,0,1-2.61,2.875h-18.73a2.46,2.46,0,0,1-2.61-2.875l1.21-11.358A2.635,2.635,0,0,1,1111.91,600.993Zm0.66-7.994h3.86c1.09,0,2.57.135,2.57,1l0.01,3.463c0.14,0.838-1.72,1.539-2.93,1.539h-4.17c-1.21,0-2.07-.7-1.92-1.539l0.37-3.139A2.146,2.146,0,0,1,1112.57,593Zm11,0h3.86a2.123,2.123,0,0,1,2.2,1.325l0.38,3.139c0.14,0.838-.72,1.539-1.93,1.539h-5.17c-1.21,0-2.07-.7-1.92-1.539L1121,594C1121,593.1,1122.48,593,1123.57,593Z"
+                                transform="translate(-1108 -593)"></path>
+
+                        </svg>
+                        <?php the_field('for_rent_bedrooms');?>
+                    </div>
+                    <div class="bathroom">
+                        <p>Bathrooms</p>
+                        <svg class="rh_svg" xmlns="http://www.w3.org/2000/svg" width="23.69" height="24"
+                            viewBox="0 0 23.69 24">
+                            <path
+                                d="M1204,601a8,8,0,0,1,16,0v16h-2V601a6,6,0,0,0-12,0v1h-2v-1Zm7,6a6,6,0,0,0-12,0h12Zm-6,2a1,1,0,0,1,1,1v1a1,1,0,0,1-2,0v-1A1,1,0,0,1,1205,609Zm0,5a1,1,0,0,1,1,1v1a1,1,0,0,1-2,0v-1A1,1,0,0,1,1205,614Zm4.94-5.343a1,1,0,0,1,1.28.6l0.69,0.878a1,1,0,0,1-1.88.685l-0.69-.879A1,1,0,0,1,1209.94,608.657Zm2.05,4.638a1,1,0,0,1,1.28.6l0.35,0.94a1.008,1.008,0,0,1-.6,1.282,1,1,0,0,1-1.28-.6l-0.35-.939A1.008,1.008,0,0,1,1211.99,613.295Zm-11.93-4.638a1,1,0,0,1,.6,1.282l-0.69.879a1,1,0,1,1-1.87-.682l0.68-.88A1,1,0,0,1,1200.06,608.657Zm-2.05,4.639a1,1,0,0,1,.6,1.281l-0.34.941a1,1,0,0,1-1.88-.683l0.34-.94A1,1,0,0,1,1198.01,613.3Z"
+                                transform="translate(-1196.31 -593)"></path>
+                        </svg>
+                        <?php the_field('for_rent_bathrooms');?>
+                    </div>
+                    <div class="area">
+                        <p>Area</p>
+                        <svg class="rh_svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                            <g>
+                                <circle cx="2" cy="2" r="2"></circle>
+                            </g>
+                            <g>
+                                <circle cx="2" cy="22" r="2"></circle>
+                            </g>
+                            <g>
+                                <circle cx="22" cy="2" r="2"></circle>
+                            </g>
+                            <rect x="1" y="1" width="2" height="22"></rect>
+                            <rect x="1" y="1" width="22" height="2"></rect>
+                            <path opacity="0.5" d="M23,20.277V1h-2v19.277C20.7,20.452,20.452,20.7,20.277,21H1v2h19.277c0.347,0.596,0.984,1,1.723,1
+    c1.104,0,2-0.896,2-2C24,21.262,23.596,20.624,23,20.277z"></path>
+                        </svg>
+                        <?php the_field('for_rent_area');?>
+                    </div>
+                </div>
+                <div class="sale--price">
+                    <p class="price-for"><?php the_field('for_rent');?></p>
+                    <p class="home-price"><?php the_field('for_rent_price');?></p>
+                </div>
+                <?php $agentimage = get_field('for_rent_agent_picture');?>
+                <div class="for-rent-agents">
+                    <div> <img class="image-agent" src="<?php echo $agentimage;?>" /></div>
+                    <div class="for-rent-agent-name"><?php the_field('for_rent_agent_name');?></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endwhile;   ?>
+    <div class="for-sale-pagination"><?php
+    post_pagination();?> </div>
+    <?php endif; ?>
+</div>
 <div class="quote-news">
     <div class="top-separator"></div>
     <div class="quote-section">

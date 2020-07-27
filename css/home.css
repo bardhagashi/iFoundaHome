@@ -546,8 +546,7 @@ a.view--properties:hover {
 .column-2 {
   background: #fff;
   font-family: "Rubik", sans-serif;
-  height: 100%;
-  max-height: 470px;
+  height: auto;
   width: 370px;
 }
 .column-2 img {
@@ -695,6 +694,39 @@ img.image-agent {
   text-decoration: none;
   border-radius: 100px;
 }
+.property-type-description {
+  position: absolute;
+  top: 130px;
+  display: flex;
+}
+.property-type {
+  color: #ffffff;
+  padding-left: 10px;
+}
+.for-rent-div {
+  margin-left: 250px;
+  padding: 3px;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 12px;
+  background: #1f79b8;
+  height: 25px;
+  width: 60px;
+  text-align: center;
+}
+.for-rent-agents {
+  display: flex;
+  background: whitesmoke;
+  height: 60px;
+  padding: 5px;
+}
+.for-rent-agent-name {
+  padding-top: 12px;
+  padding-left: 5px;
+  font-size: 20px;
+  color: #000000;
+}
+
 @media screen and (max-width: 767px) {
   .container-2 {
     display: flex;
@@ -807,7 +839,7 @@ img.image-agent {
   background: whitesmoke;
 }
 .sale-price {
-  padding-left: 50%;
+  padding-left: 36%;
   padding-top: 2%;
 }
 .single-page-top {
