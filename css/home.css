@@ -904,3 +904,24 @@ img.image-agent {
 #carouselExampleIndicators {
   background: whitesmoke;
 }
+.single-news {
+  background: whitesmoke;
+}
+.single-news-card {
+  width: 900px;
+  background: #ffffff;
+  padding-bottom: 3%;
+  margin-left: 5%;
+}
+.video-style {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.desc-news-style {
+  padding: 5%;
+  color: #808080;
+}
+.headings {
+  padding-left: 30px;
+  width: 800px;
+}
