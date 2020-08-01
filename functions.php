@@ -23,6 +23,7 @@
         wp_enqueue_script('customjs', get_template_directory_uri().'/js/ifoundahome.js', array(), '1.0.0', true);
         wp_enqueue_script('getDayAndDatejs', get_template_directory_uri().'/js/getDayAndDate.js', array(), '1.0.0', true);
         wp_enqueue_script('hideAndShowLoginRegisterjs', get_template_directory_uri().'/js/hideAndShowLoginRegister.js', array(), '1.0.0', true);
+        wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array(), '1.0.0', true );
     }
     
     add_action('wp_enqueue_scripts', "ifoundahome_script_enqueue");
@@ -142,8 +143,8 @@ function rent_custom_post_type(){
           'editor',
           'excerpt',
           'thumbnail',
-          'revisions'
-          
+          'revisions',
+          'comments'
       ), 
       'taxonomies' => array('category', 'post_tag'),
       'menu_position' => 6,
@@ -194,5 +195,62 @@ function news_custom_post_type(){
   register_post_type('news', $args);
  }
  add_action('init', 'news_custom_post_type');
+ add_theme_support('post-thumbnails');
+
+ function home_widget_setup(){
+     register_sidebar( array(
+            'name' => 'Sidebar',
+            'id' => 'sidebar-1',
+            'class' => 'custom',
+            'description' => 'Standard Sidebar',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</aside>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
+        ) 
+     );
+ }
+ add_action('widgets_init','home_widget_setup');
+
+ function agents_custom_post_type(){
+
+    $labels = array(
+        'name' => 'Agents',
+        'singular_name' => 'Agents',
+        'add_new' => 'Add Item',
+        'all_items' => 'All Items',
+        'add_new_item' => 'Add Item',
+        'edit_item' => 'Edit Item',
+        'new_item' => 'New Item',
+        'view_item' => 'View Item',
+        'search_item' => 'Search Item',
+        'not_found' => 'No Item Found',
+        'not_found_in_trash' => 'No Item Found In Trash',
+        'parent_item_colon' => 'Parent Item'
+    );
+  $args = array(
+      'labels' => $labels,
+      'public' => true,
+      'has_archive' => true,
+      'publicly_queryable' => true,
+      'query_var' => true,
+      'rewrite' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+      'supports' => array(
+          'title',
+          'editor',
+          'excerpt',
+          'thumbnail',
+          'revisions',
+          'comments'
+      ), 
+      'taxonomies' => array('category', 'post_tag'),
+      'menu_position' => 8,
+      'exclude_from_search' => false
+  );
+  register_post_type('agents', $args);
+ }
+ add_action('init', 'agents_custom_post_type');
  add_theme_support('post-thumbnails');
 ?>
