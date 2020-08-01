@@ -565,6 +565,57 @@ Template Name: Home Page Template
     post_pagination();?> </div>
     <?php endif; ?>
 </div>
+<div class="elementor-widget-container">
+    <section class="rh_elementor_widget rh_section__cta_elementor rh_cta--featured_elementor parallax"
+        style="background-size: auto; background-image: url(&quot;http://modern.b-cdn.net/wp-content/uploads/2019/07/cta-bg.jpg&quot;); background-position: center 39px;">
+        <div class="wrapper-section-contents_elementor">
+            <div class="rh_cta__wrap_elementor">
+                <p class="rh_cta__title">Buy or Sell</p>
+                <h3 class="rh_cta__quote">Looking to Buy a new property or Sell an existing one? RealHomes provides an
+                    awesome solution!</h3>
+                <div class="rh_cta__btns_elementor">
+                    <a href="#" class="cta_elementor_first_button cta_elementor_button">Submit Property</a>
+                    <a href="#" class="cta_elementor_second_button cta_elementor_button">Browse Properties</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="properties-title">
+    <h6 class="top--recent">Meet Our</h6>
+    <h2>Agents</h2>
+    <p class="top--paragraph">Get in touch with our real estate experts.
+    </p>
+</div>
+<div class="container-2">
+    <?php query_posts(array(
+    'post_type' => 'agents',
+    'posts_per_page' => 4,
+    ));
+    if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="column-3">
+        <div class="agent-section">
+            <div class="agent-section-picture"> <?php the_post_thumbnail( 'large');  ?>
+                <?php the_content();?></div>
+            <div>
+                <h5><a href=" <?php the_permalink() ?>" class="agent-section-name"><?php the_field('agent_name');?></a>
+                </h5>
+            </div>
+
+            <div class=" agent-section-number"><?php the_field('agent_phone_number');?>
+            </div>
+            <div class="agent-section-email"><?php the_field('agent_email');?></div>
+            <div class="agent-section-property">
+                <p class="ls-style"><?php the_field('number_of_listed_properties');?></p>
+                <p>Listed Properties
+                </p>
+            </div>
+        </div>
+    </div>
+    <?php endwhile;
+                endif;
+                ?>
+</div>
 <div class="quote-news">
     <div class="top-separator"></div>
     <div class="quote-section">
