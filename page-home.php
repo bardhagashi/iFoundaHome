@@ -738,6 +738,49 @@ endif;?>
             provide them an interface on front end to submit properties.</p>
     </div>
 </div>
+<div class="elementor-container elementor-column-gap-no">
+    <div class="elementor-row">
+        <div class="elementor-element elementor-element-77d3ec2d elementor-column elementor-col-100 elementor-top-column"
+            data-id="77d3ec2d" data-element_type="column">
+            <div class="elementor-column-wrap  elementor-element-populated">
+                <div class="elementor-widget-wrap">
+                    <div class="elementor-element elementor-element-4da04955 elementor-widget elementor-widget-ere-cta-two-widget"
+                        data-id="4da04955" data-element_type="widget" data-widget_type="ere-cta-two-widget.default">
+                        <div class="elementor-widget-container">
+                            <section
+                                class="rh_elementor_widget rh_section__cta_elementor_two rh_cta--featured_elementor parallax"
+                                style="background-size: auto; background-image: url(&quot;http://modern.b-cdn.net/wp-content/uploads/2019/07/cta-above-footer.jpg&quot;); background-position: center -1px;">
+
+
+                                <div class="elementor_overlay_cta_1"></div>
+                                <div class="wrapper-section-contents_elementor">
+                                    <div class="rh_cta__wrap_elementor">
+
+                                        <p class="rh_cta__title">Looking for More?</p>
+
+                                        <h3 class="rh_cta__quote">Talk to our experts or Browse through more properties.
+                                        </h3>
+
+                                        <div class="rh_cta__btns_elementor_two">
+
+                                            <a href="#"
+                                                class="cta_two_elementor_first_button cta_two_elementor_button">Get In
+                                                Touch</a>
+
+                                            <a href="#"
+                                                class="cta_two_elementor_second_button cta_two_elementor_button">Browse
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="properties-title">
     <h6 class="top--recent">Our</h6>
     <h2>Partners</h2>
@@ -745,10 +788,10 @@ endif;?>
     </p>
 </div>
 <div class="partners">
-    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/one.png">
-    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/two.png">
-    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/three.png">
-    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/four.png">
-    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/five.png">
+    <img class="partner-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/one.png">
+    <img class="partner-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/two.png">
+    <img class="partner-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/three.png">
+    <img class="partner-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/four.png">
+    <img class="partner-img img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/images/five.png">
 </div>
 <?php get_footer(); ?>
