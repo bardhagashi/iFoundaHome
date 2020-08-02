@@ -253,4 +253,6 @@ function news_custom_post_type(){
  }
  add_action('init', 'agents_custom_post_type');
  add_theme_support('post-thumbnails');
+
+ 
 ?>
