@@ -117,6 +117,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
+            <iframe src="<?php the_field('google_map');?>"></iframe>
         </div>
         <?php endwhile; 
         endif;?>

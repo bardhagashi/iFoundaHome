@@ -12,6 +12,7 @@
 
         wp_enqueue_style('buttonstyle', get_template_directory_uri().'/css/buttonToTop.css', array(), '1.0.0', 'all');
         wp_enqueue_style('bootstrapStyle2', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '1.0.0', 'all');
+        wp_enqueue_style('filer-post', get_template_directory_uri().'/css/filterPost.css', array(), '1.0.0', 'all');
 
         wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/home.css');
         wp_enqueue_style('ribbonstyle', get_template_directory_uri() . '/css/ribbon.scss');
@@ -254,5 +255,9 @@ function news_custom_post_type(){
  add_action('init', 'agents_custom_post_type');
  add_theme_support('post-thumbnails');
 
- 
+ function my_acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyAgsx74POW1NKrevcojSpV6Bkahh5w1-MY';
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 ?>

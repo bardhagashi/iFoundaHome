@@ -740,7 +740,7 @@ img.image-agent {
     display: none;
   }
   .for-sale-pagination {
-    top: 97%;
+    top: 97.5%;
     left: 0;
     right: 0;
   }
@@ -952,6 +952,7 @@ img.image-agent {
 }
 .video-style {
   padding-top: 30px;
+  padding-left: 30px;
 }
 .desc-news-style {
   color: #808080;
@@ -1323,4 +1324,19 @@ div.textwidget {
   padding-right: 10px;
   margin-bottom: 10%;
   width: 16.666%;
+}
+#recent-posts-3 {
+  margin-left: 50px;
+}
+.widget-title {
+  padding-top: 80px;
+  padding-left: 5%;
+  color: #1c9d92;
+  font-size: 26px;
+}
+.widget li a {
+  color: #000000;
+}
+#calendar-2 {
+  margin-left: 80px;
 }
