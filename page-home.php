@@ -673,4 +673,82 @@ Template Name: Home Page Template
     <?php endwhile;
 endif;?>
 </div>
+<div class="properties-title">
+    <h6 class="top--recent">Amazing</h6>
+    <h2>Features</h2>
+    <p class="top--paragraph">Test featured from elementor.
+    </p>
+</div>
+<div class="amazing-features">
+    <div class="feature-box-1">
+        <figure class="elementor-image-box-img"><img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-1.png" title="icon-feature-6.png"
+                alt="icon-feature-6.png"></figure>
+        <h5 class="feature-title">Live Customizer</h5>
+        <p class="feature-description">To help you configure and customize stuff around your website without going into
+            code. You can customize the
+            price format to any currency in the world. You can customize the URL slugs to your required ones.</p>
+    </div>
+    <div class="feature-box-1">
+        <figure class="elementor-image-box-img"><img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-2.png"
+                title="icon-design-variation-1.png" alt="icon-design-variation-1.png"></figure>
+        <h5 class="feature-title">Design Variations</h5>
+        <p class="feature-description">Real Homes theme includes two major design variations. You can use the classic or
+            modern look based on your
+            choice.</p>
+    </div>
+    <div class="feature-box-1">
+        <figure class="elementor-image-box-img"><img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-3.png"
+                title="icon-design-variation-1.png" alt="icon-design-variation-1.png"></figure>
+        <h5 class="feature-title">Advance Search</h5>
+        <p class="feature-description">Real Homes includes advanced properties search feature that is powerful and fully
+            customizable to fulfill
+            various needs. You can select which fields you want to display and what data will be displayed in those
+            fields.</p>
+    </div>
+</div>
+<div class="amazing-features">
+    <div class="feature-box-1">
+        <figure class="elementor-image-box-img"><img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-4.png" title="icon-feature-6.png"
+                alt="icon-feature-6.png"></figure>
+        <h5 class="feature-title">Google & OpenStreet Maps</h5>
+        <p class="feature-description">Real Homes includes Google Maps API integration that enables you to display
+            Google map with properties markers on search results page, properties display pages, property detail page,
+            home page and taxonomy archive pages.</p>
+    </div>
+    <div class="feature-box-1">
+        <figure class="elementor-image-box-img"><img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-5.png"
+                title="icon-design-variation-1.png" alt="icon-design-variation-1.png"></figure>
+        <h5 class="feature-title">Member Support</h5>
+        <p class="feature-description">You can provide user registration, login and forgot password features on your
+            site to let users access member only features. Social login feature allow you to integrate any social
+            network with your website for user login and registration.</p>
+    </div>
+    <div class="feature-box-1">
+        <figure class="elementor-image-box-img"><img
+                src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon-6.png"
+                title="icon-design-variation-1.png" alt="icon-design-variation-1.png"></figure>
+        <h5 class="feature-title">Front End Property Submit</h5>
+        <p class="feature-description">Real Homes provides front end property submit template and related
+            configurations. So you can restrict certain level of users from accessing administrator dashboard and
+            provide them an interface on front end to submit properties.</p>
+    </div>
+</div>
+<div class="properties-title">
+    <h6 class="top--recent">Our</h6>
+    <h2>Partners</h2>
+    <p class="top--paragraph">We honoured to have these amazing partners.
+    </p>
+</div>
+<div class="partners">
+    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/one.png">
+    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/two.png">
+    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/three.png">
+    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/four.png">
+    <img class="partner-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/five.png">
+</div>
 <?php get_footer(); ?>
