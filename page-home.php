@@ -104,6 +104,7 @@ Template Name: Home Page Template
         </div>
     </div>
 </div>
+<?php include('filter-post.php'); ?>
 <div class="container-1">
     <div class="properties--title">
         <h6 class="top--recent">Recent</h6>

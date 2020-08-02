@@ -1,0 +1,164 @@
+.post_filter {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -50px;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.post-search {
+  width: 100%;
+}
+
+.post_search-data {
+  display: flex;
+  flex-wrap: auto;
+}
+
+.post_search-option {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #a9a9a9;
+}
+
+.post_search-option .select-option:focus {
+  background-color: #1ea69a;
+}
+
+.select-option option:hover,
+.select-option selected {
+  background-color: #177c74;
+}
+
+.post_search-option label {
+  padding: 5px 10px;
+}
+
+.select-option,
+option {
+  width: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.post_search-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1ea69a;
+  padding: 20px auto;
+  height: 100px;
+  text-align: center;
+}
+
+.post_search-button a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.advanced-search {
+  position: absolute;
+  margin-top: 100px;
+  background-color: white;
+  display: none;
+  z-index: 50;
+}
+
+.advanced-search input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.advanced-search-position {
+  display: flex;
+}
+
+.advanced-search label {
+  padding: 10px;
+}
+
+.post_search-box {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: calc(100% / 4);
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.halfbox {
+  width: calc(100% / 2) !important;
+}
+
+.post_search-box .select-option:focus {
+  background-color: #1ea69a;
+}
+
+.advanced_search-fields {
+  display: flex;
+}
+
+.search-button {
+  background-color: #1ea69a;
+  border: none;
+  color: white;
+  margin: 0;
+  padding: 25px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.post_search-button-left {
+  margin: 0;
+  height: 100%;
+}
+
+.post_search-button-right {
+  margin: 0;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #177c74;
+}
+
+.certain-features-button {
+  background-color: #1ea69a;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.certain-features-button:hover {
+  background-color: #177c74;
+}
+
+.radiobox-field {
+  display: none;
+  transition: 0.3s ease-in;
+}
+
+.radiobox-field input {
+  transition: 0.3 all;
+}
+@media (max-width: 993px) {
+  .advanced-search {
+    position: relative;
+    margin-top: 0;
+  }
+}
