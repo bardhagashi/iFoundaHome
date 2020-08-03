@@ -90,6 +90,14 @@
                         </p>
                     </div>
                 </div>
+                <h6 class="desc-font-style-map">Property on Map</h6>
+                <iframe class="map-style" src="<?php the_field('google_map_news');?>"></iframe>
+                <?php if(comments_open()){
+    comments_template();
+    }  else{
+    echo "<h5>Sorry, comments are closed</h5>";
+}
+;?>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <?php get_sidebar();?>
@@ -98,12 +106,6 @@
     </div>
 </div>
 </div>
-<?php if(comments_open()){
-    comments_template();
-    }  else{
-    echo "<h5>Sorry, comments are closed</h5>";
-}
-;?>
 <?php endwhile;
 endif;?>
 

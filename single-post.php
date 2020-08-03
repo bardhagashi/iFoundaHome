@@ -117,8 +117,16 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-            <iframe src="<?php the_field('google_map');?>"></iframe>
+            <h6 class="desc-font-style-map">Property on Map</h6>
+            <iframe class="map-style" src="<?php the_field('google_map');?>"></iframe>
+            <?php if(comments_open()){
+    comments_template();
+    }  else{
+    echo "<h5>Sorry, comments are closed</h5>";
+}
+;?>
         </div>
+
         <?php endwhile; 
         endif;?>
         <div class="col-xs-12 col-sm-4">
@@ -128,10 +136,5 @@ get_header(); ?>
     </div>
 </article>
 </div>
-<?php if(comments_open()){
-    comments_template();
-    }  else{
-    echo "<h5>Sorry, comments are closed</h5>";
-}
-;?>
+
 <?php get_footer(); ?>

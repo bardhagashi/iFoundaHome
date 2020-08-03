@@ -12,8 +12,8 @@
 
 <body>
     <header id="masthead" class="site-header" role="banner">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="<?php echo home_url(); ?>"><img alt="RealHomes Modern"
+        <nav class="navbar navbar-expand-lg navbar-dark our-bg">
+            <a class="navbar-brand img-fluid" href="<?php echo home_url(); ?>"><img alt="RealHomes Modern"
                     src="http://modern.b-cdn.net/wp-content/uploads/2017/06/logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

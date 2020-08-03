@@ -2,7 +2,7 @@
     <form action="wordpress/search" method="get">
         <div class="row post_search-fields">
             <div class="col-lg-9">
-                <div class="row">
+                <div class="row filter-row-style">
                     <div class="col-md-6 col-lg-4 col-sm-12 post_search-option">
                         <label for="location">Location</label>
                         <select name="location" id="location" class="select-option">
@@ -156,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 positioning post_search-option post_search-button">
+            <div class="col-lg-3 positioning post_search-option post_search-button filter-row-style-1">
                 <div class="post_search-button-left">
                     <button type="button" onclick="advancedSearch()" class="search-button"><svg width="1em" height="1em"
                             viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"

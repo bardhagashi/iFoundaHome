@@ -156,6 +156,14 @@ select {
 .radiobox-field input {
   transition: 0.3 all;
 }
+.filter-row-style {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+.filter-row-style-1 {
+  margin: 0 !important;
+}
 @media (max-width: 993px) {
   .advanced-search {
     position: relative;
