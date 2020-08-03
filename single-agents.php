@@ -31,13 +31,14 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div>Address: <?php the_field('address');?></div>
             </div>
         </div>
-    </div>
-    <?php if(comments_open()){
+        <?php if(comments_open()){
     comments_template();
     }  else{
     echo "<h5>Sorry, comments are closed</h5>";
 }
 ;?>
+    </div>
+
     <?php endwhile;
 endif;?>
 </div>

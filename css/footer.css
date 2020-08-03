@@ -12,6 +12,7 @@
 
 .footer-dark .col-lg-6 img {
   float: left;
+  padding-left: 10px;
 }
 
 @media (min-width: 480px) {
@@ -92,6 +93,11 @@ svg:not(:root) {
   .footer-dark .item.text {
     margin-bottom: 0;
   }
+  div.row.style-row-1 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .footer-dark .item.text p {
@@ -140,4 +146,8 @@ svg:not(:root) {
   opacity: 0.3;
   font-size: 14px;
   margin-bottom: 0;
+}
+.text-center {
+  align-items: center;
+  margin: 0 auto;
 }

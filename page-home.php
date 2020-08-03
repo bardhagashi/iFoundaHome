@@ -6,13 +6,14 @@
 Template Name: Home Page Template
 */ ?>
 <a class="buttonToTop"></a>
-<?php get_header(); ?>
+
 <div class="sad">
+    <?php get_header(); ?>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner header-style">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/firstpic.jpg"
-                    alt="First slide">
+                <img class="d-block w-100 height-80vh"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/firstpic.jpg" alt="First slide">
                 <div class="first-card">
                     <h3> <a href="#" class="title">
                             Home in Merrick Way </a></h3>
@@ -21,8 +22,8 @@ Template Name: Home Page Template
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondpic.jpg"
-                    alt="Second slide">
+                <img class="d-block w-100 height-80vh"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/secondpic.jpg" alt="Second slide">
                 <div class="second-card">
                     <h3> <a href="#" class="title">
                             Villa on Grand Avenue </a></h3>
@@ -31,8 +32,8 @@ Template Name: Home Page Template
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/thirdpic.jpg"
-                    alt="Third slide">
+                <img class="d-block w-100 height-80vh"
+                    src="<?php echo get_stylesheet_directory_uri(); ?>/images/thirdpic.jpg" alt="Third slide">
                 <div class="third-card">
                     <h3> <a href="#" class="title">
                             Home in Coral Gables </a></h3>
@@ -122,7 +123,6 @@ Template Name: Home Page Template
            'post_type' => 'post',
            'paged' => $paged,
            'posts_per_page' => 3,
-           'category_name' => 'uncategorized' 
        ));
         
        if ( have_posts() ) :  while ( have_posts() ) : the_post();  ?>

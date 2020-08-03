@@ -5,8 +5,27 @@
 }
 .sad {
   position: relative;
+  height: 100vh !important;
+  width: 100%;
+  overflow: hidden;
+}
+.header-style {
+  margin-top: -100px;
+  z-index: -5;
+}
+@media (max-width: 726px) {
+  .header-style {
+    margin-top: -150px;
+  }
+}
+.sad img {
+  object-fit: cover;
+}
+.height-80vh {
+  height: 100vh !important;
 }
 .form {
+  margin-top: 70px;
   width: 34%;
   z-index: 1;
   position: absolute;
@@ -135,6 +154,7 @@
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .form {
+    margin-top: 0;
     width: 100%;
     position: relative;
     left: 0%;
@@ -458,9 +478,8 @@ a.view--properties:hover {
     display: none;
   }
   .properties--title {
-    left: 32%;
     top: 0%;
-    left: 25%;
+    left: 15%;
   }
   .container-1 {
     display: flex;
@@ -492,9 +511,6 @@ a.view--properties:hover {
   }
   .overlay {
     display: none;
-  }
-  .properties--title {
-    left: 20%;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -761,6 +777,9 @@ img.image-agent {
     justify-content: center;
     align-items: center;
   }
+  .feature-box-1 {
+    width: 100% !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .container-2 {
@@ -842,6 +861,11 @@ img.image-agent {
   margin-left: 30px;
   color: #808080;
 }
+.map-style {
+  margin-left: 60px;
+  width: 640px;
+  height: 250px;
+}
 .single-post {
   background: whitesmoke;
 }
@@ -900,6 +924,11 @@ img.image-agent {
   color: #1c9d92;
   margin-top: 10px;
 }
+.desc-font-style-map {
+  margin-left: 60px;
+  color: #1c9d92;
+  margin-top: 40px;
+}
 .desc-paragraph {
   color: #808080;
 }
@@ -918,14 +947,13 @@ img.image-agent {
   margin-top: 20px;
 }
 .comment-respond {
-  background: #f7f7f7;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 60px;
 }
 .comment-form-comment {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: 640px;
 }
 #reply-title {
   font-size: 20px;
@@ -1105,7 +1133,6 @@ div.textwidget {
   text-decoration: none;
 }
 .agent-section-number {
-  font-family: "Roboto";
   line-height: 18px;
   color: #1ea69a;
   font-size: 15px;
@@ -1121,7 +1148,7 @@ div.textwidget {
 .agent-single-post {
   width: 700px;
   background: #ffffff;
-  margin-left: 50px;
+  margin-left: 22%;
   margin-top: 50px;
 }
 .single-post-agent-image img {
@@ -1132,12 +1159,12 @@ div.textwidget {
 }
 .single-post-agent-description {
   padding-top: 10px;
-  padding-bottom: 10px;
   width: 550px;
 }
 .body-ag {
   background: #f7f7f7;
   margin: 0;
+  padding: 0;
 }
 .contact-no {
   text-indent: 40px;

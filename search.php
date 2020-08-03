@@ -34,6 +34,8 @@
     {
         $minPrice = $_GET['minPrice'];
     }
+
+     var_dump($minPrice);
     // if($_GET['maxPrice'])
     // {
     //     $maxPrice = $_GET['maxPrice'];
@@ -57,10 +59,22 @@
 ?>
 
 <div class="container">
-
     <?php
-$args = array( 'category_name' => "$type, $location, $status, $bedrooms");
-        
+$args = array( 'category_name' => "$type, $location, $status, $bedrooms, $minPrice");
+        array(
+            'numberposts' => -1,
+            'post-type' => 'post',
+            'meta_query' => array(
+                'relation' => 'OR',
+                array(
+                    'key' => 'price',
+                    'value'		=> "$minPrice",
+			        'compare'	=> '>'
+                )
+            )
+        );
+
+    
 	// 'numberposts'	=> -1,
 	// 'post_type'		=> 'post',
 	// 'meta_query'	=> array(
@@ -83,6 +97,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
     <div>
         <h1><?php the_title(); ?></h1>
         <p><?php the_content(); ?></p>
+        <?php the_category();?>
         <p><?php the_field('bedrooms'); ?></p>
         <p><?php the_field('bathrooms'); ?></p>
         <p><?php the_field('area'); ?></p>
